@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>To-do Apps</title>
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="judul-container">
+         <h1>To-do Apps</h1>
+         <p>
+            To-do apps memungkinkan Anda untuk merekap kegiatan anda agar lebih
+            produktif
+         </p>
+      </div>
+      <div class="input-form">
+         <div class="container-input">
+            <label for="input-kegiatan">Masukan Kegiatan</label>
+            <div class="btn-input">
+               <input
+                  type="text"
+                  id="input-kegiatan"
+                  name="input-kegiatan"
+                  placeholder="e.g Membaca Buku"
+               />
+               <button id="btn-tambah" onclick="tambah(indexEdit)"></button>
+            </div>
+            <label for="cariList">Cari kegiatan</label>
+            <input
+               type="text"
+               id="cariList"
+               placeholder="Masukan Nama kegiatan"
+            />
+         </div>
+      </div>
+
+      <div class="container-table">
+         <table id="todoList"></table>
+      </div>
+      <div id="container-reset">
+         <button id="reset">Reset</button>
+      </div>
+
+      <script src="script.js"></script>
+   </body>
+</html>
