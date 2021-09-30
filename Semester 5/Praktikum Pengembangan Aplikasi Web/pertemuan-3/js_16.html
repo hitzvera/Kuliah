@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Latihan perulangan do while</title>
+   </head>
+   <body>
+      <script>
+         var coba = 1;
+         var inputPassword;
+         do {
+            if (coba == 1) inputPassword = prompt("Masukan Password");
+            else inputPassword = prompt("Masukan Password dengan benar");
+
+            if (inputPassword === "Mujahid") {
+               alert("Anda berhasil Masuk");
+               window.open("welcome to hitzvera pages");
+               break;
+            } else {
+               alert("Password yang anda Masukan salah");
+            }
+
+            if (coba == 3) {
+               alert("Maaf anda hanya diperkenankan mencoba 3 kali");
+               history.go(-1);
+            }
+            coba++;
+         } while (coba <= 3);
+      </script>
+   </body>
+</html>

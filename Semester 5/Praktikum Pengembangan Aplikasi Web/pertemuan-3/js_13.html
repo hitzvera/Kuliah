@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>switch case</title>
+   </head>
+   <body>
+      <form action="" name="fform" autocomplete="off">
+         <h2>Penggunaan percabangan switch</h2>
+         <hr />
+         <span>Masukan Nomor Bulan (1-12) : </span>
+         <input type="text" name="ibulan" size="5" />
+         <br /><br />
+         <input type="button" value="Hitung" onclick="hitungBulan()" />
+         <input type="reset" value="Ulang" />
+      </form>
+
+      <script>
+         function hitungBulan() {
+            var bulan = parseInt(document.fform.ibulan.value);
+            var namaBulan = null;
+
+            switch (bulan) {
+               case 1:
+                  namaBulan = "Bulan ke 1 Adalah Januari";
+                  break;
+               case 2:
+                  namaBulan = "Bulan ke 2 Adalah Februari";
+                  break;
+               case 3:
+                  namaBulan = "Bulan ke 3 Adalah Maret";
+                  break;
+               case 4:
+                  namaBulan = "Bulan ke 4 Adalah April";
+                  break;
+               case 5:
+                  namaBulan = "Bulan ke 5 Adalah Mei";
+                  break;
+               case 6:
+                  namaBulan = "Bulan ke 6 Adalah Juni";
+                  break;
+               case 7:
+                  namaBulan = "Bulan ke 7 Adalah Juli";
+                  break;
+               case 8:
+                  namaBulan = "Bulan ke 8 Adalah Agustus";
+                  break;
+               case 9:
+                  namaBulan = "Bulan ke 9 Adalah September";
+                  break;
+               case 10:
+                  namaBulan = "Bulan ke 10 Adalah Oktober";
+                  break;
+               case 11:
+                  namaBulan = "Bulan ke 11 Adalah November";
+                  break;
+               case 12:
+                  namaBulan = "Bulan ke 12 Adalah Desember";
+                  break;
+               default:
+                  namaBulan = "inputan tidak valid";
+                  break;
+            }
+            alert(namaBulan);
+         }
+      </script>
+   </body>
+</html>

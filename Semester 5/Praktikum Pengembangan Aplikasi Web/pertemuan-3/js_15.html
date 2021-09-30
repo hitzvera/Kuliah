@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Latihan perulangan while</title>
+   </head>
+   <body>
+      <script>
+         var deret = "";
+         deret = prompt("Masukan Jumlah deret");
+         deret = parseInt(deret);
+         // masukan harus angka
+         if (isNaN(deret)) {
+            while (isNaN(deret)) {
+               deret = prompt("Masukan Harus angka");
+               deret = parseInt(deret);
+            }
+         }
+
+         var jml = 0.0;
+         var angka = 1;
+         while (angka <= deret) {
+            jml += angka;
+            angka++;
+         }
+
+         document.writeln("<h2>Latihan perulangan While</h2><br>");
+         document.writeln("-------------------------------------------------");
+         document.writeln("<break>");
+         document.writeln(
+            "Jumlah deret dari 1 sampai " +
+               deret +
+               " adalah = " +
+               jml +
+               "<break>"
+         );
+         document.writeln("-------------------------------------------------");
+      </script>
+   </body>
+</html>

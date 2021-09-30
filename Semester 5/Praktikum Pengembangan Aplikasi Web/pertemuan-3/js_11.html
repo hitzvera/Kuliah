@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Percabangan if else</title>
+   </head>
+   <body>
+      <form name="fform" autocomplete="off">
+         <h2>Bilangan Negatif, Nol, Atau Positif???</h2>
+         <p>Masukan Bilangan :</p>
+         <input type="text" name="bilangan" />
+         <br />
+         <br />
+         <input type="button" value="Tanya" onclick="tanyaBilangan()" />
+         <input type="reset" value="Ulang" />
+      </form>
+
+      <script>
+         function tanyaBilangan() {
+            var bil = parseFloat(document.fform.bilangan.value);
+            var jenis = " ";
+            if (isNaN(bil)) {
+               alert("Masukan tidak valid");
+            } else {
+               if (bil > 0) jenis = " Adalah bilangan positif";
+               else if (bil == 0) jenis = " Adalah nol";
+               else jenis = " Adalah bilangan Negatif";
+            }
+            alert(bil + jenis);
+         }
+      </script>
+   </body>
+</html>
