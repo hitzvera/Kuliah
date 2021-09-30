@@ -36,11 +36,11 @@ function showData() {
                         </tr>`
     
     for(let i=0;i < localStorage.length;i++) {
-        let btnEdit = "<button class='btn edit' onclick='edit(" + i + ")'>Edit</button>"
-        let btnHapus = "<button class='btn hapus' onclick='hapus(" + i +")'>Hapus</button>"
+        let btnEdit = "<button class='btn edit' onclick='edit(" + i + ")'><i class='fa-solid fa-pencil'></i></button>"
+        let btnHapus = "<button class='btn hapus' onclick='hapus(" + i +")'><i class='fa-solid fa-xmark'></i></button>"
         let no = i+1
 
-        tabel.innerHTML += "<tr class='barisTabel'><td>"+no+"</td><td>"+localStorage.getItem(localStorage.key(i))+"</td><td>"+btnEdit+btnHapus+"</td><tr>"
+        tabel.innerHTML += "<tr class='barisTabel active-row'><td class='changeDark'>"+no+"</td><td class='changeDark'>"+localStorage.getItem(localStorage.key(i))+"</td><td class='changeDark'>"+btnEdit+btnHapus+"</td><tr>"
     }
 }
 
@@ -86,5 +86,25 @@ resetBtn.addEventListener('click',function(){
     }
     
 })
+let darkModeStatus = true
+const darkModeButton = document.querySelector('.dark-mode')
+const textTable = document.querySelectorAll('.changeDark')
+function darkMode(status) {
+    if(status) {
+        document.body.style.backgroundColor = "#fafafa"
+        darkModeButton.innerHTML = "<i class='fa-solid fa-moon fa-2x'></i>"
+        darkModeButton.style.color = "white"
+        darkModeButton.style.backgroundColor = "black"
+        // textTable.style.color = "black"
+        document.body.style.color = "black"
+        darkModeStatus = false
+    } else {
+        document.body.style.backgroundColor = "#082c6c"
+        darkModeButton.innerHTML = "<i class='fa-solid fa-sun fa-2x'></i>"
+        document.body.style.color = "white"
+        // textTable.style.color = "white"
+        darkModeStatus = true
+    }
+}
 
 showData()
