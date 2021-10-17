@@ -1,0 +1,28 @@
+- project is something extremely userful for people that wnat to accomplish their future ideas
+-project is a temporary endeavour undertaken to create a unique product, service or result
+
+- dalam sebuah project terdapat 3 hal utama
+	- time (start/end)
+	- tujuan yang harus diraih (product, service, result), the scope have to be unique
+	- biaya 
+	
+jika terjadi perubahan dalam satu aspek saja maka akan merubah keseluruhan sebuah project, contoh jika kita ingin merubah exp date menjadi lebih cepat, maka dampak dari hal tersebut akan merubah cost dari sebuah project tersebut karena akan membutuhkan resource yang banyak dan butuh biaya yang banyak pula
+
+- a project have to relate to a business strategy, salah satu studi kasus nya. jika sebuah bank x telah memiliki mobile banking, dan bank y belum punya. maka bank y dituntut untuk membangung sebuah project (software development, m-banking) jika telat atau tidak sama sekali. maka bank y beresiko kehilangan pelanggan.
+
+demand to create a project
+- Market need
+- business need
+- technological advancemenet
+- customer request
+- legal requirements
+- social needs
+- ecological considerations
+
+prioritizing
+- urgency
+- have most value financial and non financial
+
+project portofolio management = prioritizing projects and teh administration and control of large sets of projects and programs, the objective is to achieve the result and combine resources across projects in an optimal way
+
+

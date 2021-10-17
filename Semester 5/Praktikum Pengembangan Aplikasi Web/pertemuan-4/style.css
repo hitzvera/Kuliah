@@ -1,0 +1,16 @@
+.profile {
+   margin: 0 2rem;
+}
+#projects,
+#contact,
+#jumbotron {
+   background-color: #ffe4c4;
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+.seeProject {
+   border-radius: 5px;
+   border: 1px solid black;
+}
