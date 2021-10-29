@@ -1,0 +1,124 @@
+@import url(partials/_variables.css);
+@import url(partials/_global.css);
+
+/* ==== start navigation ==== */
+.header_area {
+   box-shadow: 0 5px 40px 0px rgba(10, 10, 10, 0.125);
+   margin-bottom: 4rem;
+   position: sticky;
+   top: 0;
+   background-color: white;
+}
+.header_area .main-menu .navbar-nav .nav-link {
+   color: var(--title-color);
+   padding: 1.2rem;
+   font-weight: 500;
+   font-size: 1.2rem;
+   transition: 0.5s;
+}
+.header_area .main-menu .navbar-nav .nav-link:hover {
+   color: var(--primary-color);
+}
+.navbar-name {
+   text-decoration: none;
+   color: black;
+   font-size: 2rem;
+}
+.icon {
+   padding: 1rem;
+   background-color: lightgrey;
+   border-radius: 50%;
+}
+/* ==== end navigation ==== */
+
+/* === start banner area ===*/
+
+/* .site-main .site-banner {
+   background: url(../img/banner/home-banner.png) no-repeat;
+   background-position: 0% 50%;
+} */
+.site-main .site-banner .site-title h3 {
+   padding-top: 35%;
+   font-weight: 400;
+}
+.site-main .site-banner .site-title h3::after {
+   content: "";
+   border: 1px dashed black;
+   height: 2px;
+   width: 10rem;
+   margin-left: 3%;
+   display: inline-block;
+}
+.site-main .site-banner .site-title h1 {
+   font-size: 4rem;
+}
+.site-main .site-banner .site-title h4 {
+   font-size: 1.8rem;
+   font-weight: 400;
+}
+
+/* === end banner area ===*/
+
+/* === start about area === */
+.about-area {
+   padding: 8rem 5rem;
+}
+.about-area h2 > span {
+   display: block;
+   letter-spacing: 20px;
+   text-transform: uppercase;
+}
+.para {
+   padding: 10px 0;
+}
+/* === end about area === */
+
+/* === start service area === */
+
+.site-main .services-area {
+   padding: 7rem 2rem;
+}
+.site-main .services-title {
+   margin: 1rem 0;
+}
+.site-main > .services-area .service {
+   background-color: rgba(248, 252, 253, 0.973);
+   padding: 2rem 0;
+   width: 16rem;
+   margin: 5rem 0.5rem;
+   transition: box-shadow 0.7s;
+}
+.site-main > .services-area .service:hover {
+   box-shadow: var(--box-shadow);
+}
+/* === end service area === */
+
+/* === start get contact === */
+
+.get-contact .contact-container {
+   background: rgb(29, 110, 143);
+   background: linear-gradient(
+      90deg,
+      rgba(29, 110, 143, 1) 35%,
+      rgba(80, 180, 255, 1) 100%
+   );
+   color: white;
+   padding: 3rem;
+   border-radius: 4px;
+   box-shadow: var(--box-shadow);
+}
+.get-contact {
+   margin: 10rem 0;
+}
+
+/* === end get contact === */
+/* footer */
+.link-me {
+   text-decoration: none;
+   color: black;
+   font-size: 2rem;
+}
+footer.footer-area {
+   background: url(../img/footer-bg.png);
+}
+/* end footer */

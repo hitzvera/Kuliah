@@ -1,0 +1,52 @@
+/* buttons */
+/* .button {
+   padding: 0.8rem 2.2rem;
+   font: normal 500 16px/20px;
+   border: 3px solid transparent;
+   border-radius: 4px;
+} */
+/* .button.primary-button {
+   background-image: linear-gradient(
+      to right,
+      #00c6ff 0%,
+      #0072ff 51%,
+      #00c6ff 100%
+   );
+   color: white;
+}
+.button.primary-button:hover {
+   background-position: right center; /* change the direction of the change here */
+/* color: #fff;
+   text-decoration: none;
+} */
+.button.primary-button,
+.button.secondary-button {
+   background-image: linear-gradient(
+      to right,
+      #56ccf2 0%,
+      #2f80ed 51%,
+      #56ccf2 100%
+   );
+}
+.button.primary-button,
+.button.secondary-button {
+   margin: 10px;
+   padding: 10px 15px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   box-shadow: var(--box-shadow);
+   font-size: 1rem;
+}
+
+.button.primary-button:hover,
+.button.secondary-button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
